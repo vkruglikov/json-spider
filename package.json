@@ -1,0 +1,27 @@
+{
+  "name": "json-spider",
+  "version": "0.0.3",
+  "description": "JsonSpider weaves logic from json",
+  "author": "V.Kruglikov <dev.n@bk.ru>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir es5",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-numeric-separator": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.4",
+    "@babel/runtime": "^7.7.6",
+    "@types/jest": "^24.0.23",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  }
+}
