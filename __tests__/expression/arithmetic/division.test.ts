@@ -3,21 +3,21 @@ import expressionRegistry from "../../../src/registry/expressionRegistry";
 import {DivisionExpression} from "../../../src/expression/arithmetic/division";
 import {CONSTANT, ConstantExpression} from "../../../src/expression/constant";
 
-expressionRegistry.register(CONSTANT, ConstantExpression)
+expressionRegistry.register(CONSTANT, ConstantExpression);
 
-it('Division: createFromJsonExpression', async () => {
+it("Division: createFromJsonExpression", async () => {
     const expression = DivisionExpression.createFromJsonExpression({
-        type: 'EXP_DIVISION',
+        type: "EXP_DIVISION",
         left: {
-            type: 'CONSTANT',
+            type: "CONSTANT",
             value: 100,
-            valueType: 'NUMBER'
+            valueType: "NUMBER",
         },
         right: {
-            type: 'CONSTANT',
+            type: "CONSTANT",
             value: 10,
-            valueType: 'NUMBER'
-        }
+            valueType: "NUMBER",
+        },
     });
 
     expect(await expression.calculate()).toEqual(10);

@@ -4,9 +4,11 @@
   "description": "JsonSpider weaves logic from json",
   "author": "V.Kruglikov <dev.n@bk.ru>",
   "license": "MIT",
+  "main": "./src/index.tsx",
   "scripts": {
     "build": "babel src --out-dir es5",
-    "test": "jest"
+    "test": "jest",
+    "lint": "tslint --project '.'"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.4",

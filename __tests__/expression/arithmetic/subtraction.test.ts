@@ -1,22 +1,22 @@
-import expressionRegistry from "../../../src/registry/expressionRegistry";
 import {SubtractionExpression} from "../../../src/expression/arithmetic/subtraction";
 import {CONSTANT, ConstantExpression} from "../../../src/expression/constant";
+import expressionRegistry from "../../../src/registry/expressionRegistry";
 
-expressionRegistry.register(CONSTANT, ConstantExpression)
+expressionRegistry.register(CONSTANT, ConstantExpression);
 
-it('Subtraction: createFromJsonExpression', async () => {
+it("Subtraction: createFromJsonExpression", async () => {
     const expression = SubtractionExpression.createFromJsonExpression({
-        type: 'EXP_SUBTRACTION',
+        type: "EXP_SUBTRACTION",
         left: {
-            type: 'CONSTANT',
+            type: "CONSTANT",
             value: 10,
-            valueType: 'NUMBER'
+            valueType: "NUMBER",
         },
         right: {
-            type: 'CONSTANT',
+            type: "CONSTANT",
             value: 10,
-            valueType: 'NUMBER'
-        }
+            valueType: "NUMBER",
+        },
     });
 
     expect(await expression.calculate()).toEqual(0);

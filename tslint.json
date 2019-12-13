@@ -3,7 +3,16 @@
     "extends": [
         "tslint:recommended"
     ],
+    "linterOptions": {
+        "exclude": [
+            "config/**/*.js",
+            "node_modules/**/*.ts"
+        ]
+    },
+    "rules": {
+        "interface-name" : [true, "never-prefix"],
+        "object-literal-sort-keys": false
+    },
     "jsRules": {},
-    "rules": {},
     "rulesDirectory": []
 }

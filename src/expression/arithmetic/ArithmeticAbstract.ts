@@ -11,6 +11,7 @@ abstract class ArithmeticAbstract extends Expression {
         // @ts-ignore
         return new this({
             type: jsonExpression.type,
+            // tslint:disable-next-line:object-literal-sort-keys
             left: createExpression(jsonExpression.left),
             right: createExpression(jsonExpression.right),
         });
