@@ -1,15 +1,22 @@
 {
   "name": "json-spider",
-  "version": "0.0.3",
+  "version": "0.0.10",
   "description": "JsonSpider weaves logic from json",
   "author": "V.Kruglikov <dev.n@bk.ru>",
   "license": "MIT",
-  "main": "./src/index.tsx",
+  "main": "lib/index.js",
   "scripts": {
-    "build": "babel src --out-dir es5",
     "test": "jest",
-    "lint": "tslint --project '.'"
+    "lint": "tslint --project '.'",
+    "build": "npm run build:js",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "prepare": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vkruglikov/json-spider.git"
+  },
+  "homepage": "https://github.com/vkruglikov/json-spider#readme",
   "devDependencies": {
     "@babel/cli": "^7.7.4",
     "@babel/core": "^7.7.4",

@@ -1,4 +1,6 @@
-### JsonSpider weaves logic from json
+[![NPM](https://img.shields.io/npm/v/json-spider.svg)](https://www.npmjs.com/package/json-spider)
+
+# Json-Spider
 
 #### Constant expression
 ```javascript
