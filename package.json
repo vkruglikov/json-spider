@@ -10,7 +10,7 @@
     "lint": "tslint --project '.'",
     "build": "npm run build:js",
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
-    "prepare": "npm run build"
+    "prepare": "npm run test && npm run build"
   },
   "repository": {
     "type": "git",
