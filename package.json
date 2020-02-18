@@ -1,6 +1,6 @@
 {
   "name": "json-spider",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "JsonSpider weaves logic from json",
   "author": "V.Kruglikov <dev.n@bk.ru>",
   "license": "MIT",

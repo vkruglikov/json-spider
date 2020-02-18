@@ -1,1 +1,1 @@
-export {default as calculateExpression  }  from "./expression/calculateExpression";
+export {calculateExpression }  from "./expression";
