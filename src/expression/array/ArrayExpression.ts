@@ -6,7 +6,7 @@ interface ArrayJsonExpression extends JsonExpression {
 }
 
 class ArrayExpression extends Expression {
-    public static createFromJsonExpression(jsonExpression: any) {
+    public static createFromJsonExpression(jsonExpression: ArrayJsonExpression) {
         return new this({
             type: jsonExpression.type,
             content: jsonExpression.content.map((json: JsonExpression) => createExpression(json)),
