@@ -1,7 +1,0 @@
-src/
-__tests__/
-.idea/
-tsconfig.json
-tslint.json
-babel.config.js
-jest.config.js
