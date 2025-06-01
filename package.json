@@ -3,5 +3,12 @@
   "packageManager": "npm@8.5.0",
   "scripts": {
     "dev": "echo \"Error: no dev specified\" && exit 1"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "^2.5.4"
   }
 }
